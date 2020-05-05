@@ -15,6 +15,10 @@ class CreateModelVehiclesTable extends Migration
     {
         Schema::create('model_vehicles', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->float('daily_hire_rate');
+            $table->bigInteger('manufacturer_id')->unsigned();
+            $table->foreign('manufacturer_id')->references('id')->on('manufacturers');
             $table->timestamps();
         });
     }

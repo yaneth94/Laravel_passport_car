@@ -15,6 +15,7 @@ class CreateRentalStatusesTable extends Migration
     {
         Schema::create('rental_statuses', function (Blueprint $table) {
             $table->id();
+            $table->enum('status',['RENTED','AVAILABLE'])->default('AVAILABLE');
             $table->timestamps();
         });
     }

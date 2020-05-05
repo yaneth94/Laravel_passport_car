@@ -14,8 +14,14 @@ class CreateRentalsTable extends Migration
     public function up()
     {
         Schema::create('rentals', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigInteger('vehicle_id')->unsigned();
+            $table->foreign( 'vehicle_id')->references('id')->on('vehicles');
+            $table->bigInteger('rental_status_id')->unsigned();
+            $table->foreign( 'rental_status_id')->references('id')->on('rental_statuses');
+            $table->bigInteger('customer_id')->unsigned();
+            $table->foreign( 'customer_id')->references('id')->on('customers');
+            $table->dateTime('from');
+            $table->dateTime('to');
         });
     }
 
