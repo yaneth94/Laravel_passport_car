@@ -2,11 +2,11 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Locations;
+use App\Location;
 use Faker\Generator as Faker;
 
-$factory->define(Locations::class, function (Faker $faker) {
+$factory->define(Location::class, function (Faker $faker) {
     return [
-        //
+        'name' => $faker->country
     ];
 });
