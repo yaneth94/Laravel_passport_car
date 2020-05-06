@@ -28,5 +28,8 @@ Route::get('/manufacturers','ManufacturerController@index');
 Route::get('/model-vehicles','ModelVehicleController@index');
 Route::get('/type-vehicles','TypeVehicleController@index');
 Route::get('/rental-statuses','RentalStatusController@index');
-Route::get('/rentals','RentalController@index');
 Route::get('/vehicles','VehicleController@index');
+Route::get('/rentals','RentalController@index');
+//paginacion
+Route::get('/rentals/paginate','RentalController@paginate');
+Route::get('/rentals/{customer}/customer','RentalController@forCustomer');
