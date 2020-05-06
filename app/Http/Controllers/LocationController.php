@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Location;
+use App\Http\Resources\LocationResource;
 
-class LocationsController extends Controller
+
+class LocationController extends Controller
 {
-    //
+    public function index(){
+    	return LocationResource::collection(Location::all());
+    }
 }
