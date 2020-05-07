@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "911dfbe4-f970-4777-a15e-952adf205677",
+		"name": "laravel-passport",
+		"description": "Curso de COMO FUNCIONA laravel passport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Locations",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/locations",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/customers",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manufacturers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMjAxNWQzYWQ5OGZlNTMyNTkxMjVmNzhmZGM5ZDZiZWI2ZGNlNTQyYjNmODE2ZWI5YWU5ZjAzZDQ3YmIwMWM5OGY5ZDEyMzhkNmI0MzYyODciLCJpYXQiOjE1ODg4ODM1MDksIm5iZiI6MTU4ODg4MzUwOSwiZXhwIjoxNjIwNDE5NTA5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.d_QL4BdnQ2G2Tn11J0NQzgLfPdq3WXbAQQIHmKjQaJUGoumnPx6xNGPavETAgAJHzHepArbf2AAEREVDn_tYMntCZVqFfhBpSQ5hvCFAvm1k_n3dwwyGAyyF4Cu4ple9WSODYMega5AUi5wjd2TlInFZUtVMLE-ErtXEpq3jGtuk0CFz1bJTdcd4AjFy51u_V-WU4IKyFU4btnYux0zzSEQjWom6s8f1mT9UQnpC4cVPM63-RQFttIIS4Ul3Z4FxqwV4JOln-LfPou5fEnR83nhvkJYRAgUZw9dLdbpClsaKYRisG0ZZTFlCiYN5hJ_H65QljehbqkaVz8W40iF8IB-WBoxjj2fi661iZ8mOid-n75pb49BRt7aq_v1-pOYnjVuMFHLiLla9sE5G274wsHsldChfj4kYGlZeLQV9AbfkALnHVfKEPHx28IoZ3Ui541Qv55G1jRxp0F0e7L0y9Cn1Hz1zV6xvBFGW3w67X4N27J99RqO32hO5aEWKx2zjoq4aRxeCBK_4kpm8pzJF6GoYRF8lp6Xl8GWfMi56r10PRzJPYr1f_jSNExOHa931dlo7vaR_qkPk_x4iNd6Qm-iycAo2XTffUGzGe2w5bgGPrd6Cr2EaGzqPZetBVl35ScNELoycumboMoFp23YgJLLsTug7PxDIqCNUb6DqBHI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/manufacturers",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Model Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/model-vehicles",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"model-vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Type Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/type-vehicles",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"type-vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rental Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/rental-statuses",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"rental-statuses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rental",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/rentals",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"rentals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/vehicles",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paginate Rentals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/rentals/paginate",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"rentals",
+						"paginate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rental for Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/rentals/1/customer",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"rentals",
+						"1",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/vehicles/1",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"vehicles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Manufacturer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "prueba",
+							"type": "text"
+						},
+						{
+							"key": "detalles",
+							"value": "prueba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "car-reservation.test/api/manufacturers",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@m.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "car-reservation.test/api/auth/login",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZTk0ODVhMjFjYTFlMzNiZmNlMTU5Y2E1ZGEwZTkyZDQ4YmI0ODBlYTIxMzRlNDllYWZjMjI2MTAzZmQ2NDFiNDM2NjM2MDhiZDIyYjk4YjciLCJpYXQiOjE1ODg4ODM5ODQsIm5iZiI6MTU4ODg4Mzk4NCwiZXhwIjoxNjIwNDE5OTg0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.u5xK31vXwYwLOQ4EOr-Lq8ZEh9Q4q-TuMuGVmnLvzgrt_Y4B7jXaAN5gpTp6_OnbAUKewu7OSRowcCe3ts6Iyt0eOnAv7kuPYyw_aksPq9RtShU3h7j7dgsvGe4C4hv02wSmpdoHyzE3vYQ6bFXBP9jfDIaC3k9abHWngEYM4RJraruDBIe_MynT_LT14A3eKwZEP--YdU_7fg0czziMs8ezy_mjnMeCVZjuxc8qz8dQ6aAcTH8CVQnWeeO5suJ9PqSeFZm0ruJ44LVlxoEoBBd6KRERQb__i6XVB3QZKY-0Eax_PohrPr6U0EAJNOX2LZyS6nwOgg590kqAD6xnMrGZj_bqk_vafdm4Bqx_uwSpr2UX1ak5sNpaQGHAX8hGJq9795-0xwnNhQ0DlgGG1hPtOhfBE6hVZUWLrFYN4EgpWyZPp8w_06DGSMYsSlDucvj35n2Z5wE6lU20_1ABZ3h6WbP4DaDWuZbSe_hckLIayCCt5hOXIMjDjJc6e4C-Dfp6FYI0MS4jnUWLKz-i_m4UVY1sT9cdCIR_zduHYxiDNC22OYyxcIrBMeWW6qVrdRN1Qvd2ipY4k05RAFixY_ZqHGxx1WADuSnEMfYaw-NDtV__qMwxMFIogIvAUEuLYkgVhcNWdXWSygYDnsiCcQ1QmLC1Z_l_GAke2VRxEoE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@m.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "car-reservation.test/api/auth/logout",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show User ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYmZjNzVlMTFmZjQwYjE0MzM1NmZjNjYyZjk0ZWEzNTMwNTI2ZmY4NGI3YTdkNDgzNWVkZTM0ZDY2ODRlODg3OTViMTk3M2EwNzQyZGI1MzUiLCJpYXQiOjE1ODg4ODQ0ODQsIm5iZiI6MTU4ODg4NDQ4NCwiZXhwIjoxNjIwNDIwNDg0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uxSU7YJNtMI7DvUrDiVt6rsCdC9h1t1njVY91kT0NCSHTB6Ptb5VAG6D48Ok4-u9qEmziLmPL8fhk7QL8OAk5wlLzRmCvVegbr4zhErb5_Fb_iR7eNQsNe9WkRkK4V27rIjDuA0qOk17zqfsLx5p781XCbjxan5WWqyXDbS6RohsHtPQox2QwceTWD7ch0dOLMKsFLPpRPqlhDzQurewkV_Phq7GxDylK0TkLQCi4CrDxsWzSrvPvsHHKi2HKEofFhUrbmADs5RvdeqPtzTyAxqMi4MJF7Upn8w9VbVBMMDtcQUOnYUrwZU7DHgCiiTu-c1Un77hirw_9FvcgsDokIxRzMzqxmJ4j21gRcjwEgGHwIypnUOy3gCfwSctoZQ34EkR1UxydMkOQQvUrrACwmZhPsqrP2CTkRnUWCgdshKTHKkS8dCkSiUXwttVsI58p6vVHkfs3RGDwv36YNRd8_mjvJmm2t6x2esG4BnRoTN8-PjeVx6soMhTIZwDwDG57gF8xzELRZhZeNxo2PvVH8FTItnqlBk5v4WVXbfA8fVoH-tTrS5t_3moIZSaFVTX1zgGL7b1-aR8nQvQTp9A1UlD2qGW5UWEqV7mdCXsxVblzstVvheMHMmURxRLp6mmnZjDfSbMkgi3hmMFtp9NjoVFVNgPRzRm6Bx9GzNmyAE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "car-reservation.test/api/auth/user",
+					"host": [
+						"car-reservation",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
